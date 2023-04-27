@@ -6,9 +6,20 @@ export default {
 </script>
 
 <template>
-  <h1>Main</h1>
+  <main>
+    <div class="container">
+      <h1>CONTENT GOES HERE</h1>
+    </div>
+  </main>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+@use '../scss/main.scss';
+  main {
+    background-color: black;
+    height: 100px;
+  }
+  h1 {
+    color: white;
+  }
 </style>
