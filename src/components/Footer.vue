@@ -91,5 +91,11 @@ export default {
   .footer-img {
     width: 500px;
     overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      bottom: -65px;
+    }
   }
+
 </style>
