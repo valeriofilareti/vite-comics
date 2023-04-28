@@ -41,11 +41,16 @@ export default {
   .card {
     width: 200px;
     padding: 10px;
+    margin-top: 10px;
     .image{
       width: 180px;
       height: 180px;
-      border: 1px solid red;
       overflow: hidden;
+    }
+    .text {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-top: 10px;
     }
   }
 
