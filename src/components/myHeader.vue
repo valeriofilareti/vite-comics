@@ -1,7 +1,16 @@
 
 <script>
+import nav from '../data/nav-db.js';
 export default {
-  name: 'myHeader'
+  name: 'myHeader',
+  data(){
+    return {
+      nav
+    }
+  },
+  mounted(){
+
+  }
 }
 </script>
 
@@ -13,16 +22,9 @@ export default {
       </div>
       <nav>
         <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
+          <li v-for="link in nav"><a href="">{{ link.name }}</a></li>
+
+
         </ul>
       </nav>
     </div>
