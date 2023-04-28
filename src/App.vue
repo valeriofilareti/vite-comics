@@ -3,6 +3,7 @@
 import myHeader from './components/myHeader.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
+import Jumbo from './components/Jumbo.vue';
 import comics from './data/dc-comics.json';
 
 export default {
@@ -10,7 +11,8 @@ export default {
   components: {
     myHeader,
     Main,
-    Footer
+    Footer,
+    Jumbo
   },
   data(){
     return {
@@ -25,6 +27,7 @@ export default {
 </script>
 <template>
   <myHeader />
+  <Jumbo />
   <Main />
   <Footer />
 
