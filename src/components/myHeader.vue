@@ -5,7 +5,8 @@ export default {
   name: 'myHeader',
   data(){
     return {
-      nav
+      nav,
+      isActive: true
     }
   },
   mounted(){
@@ -21,8 +22,8 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <nav>
-        <ul>
-          <li v-for="link in nav"><a href="">{{ link.name }}</a></li>
+        <ul class="d-flex">
+          <li v-for="link in nav" :class="{ active: link.isActive }"><a href="">{{ link.name }}</a></li>
 
 
         </ul>
@@ -36,18 +37,26 @@ export default {
   
   header {
     height: 100px;
-    border: 1px solid black;
+    padding: 55px 0;
   }
   .logo {
     width: 80px;
   }
+  .active {
+    border-bottom: 5px solid red;
+  }
 
   nav {
+    height: 101px;
+    line-height: 80px;
+  }
     ul {
-      display: flex;
       li {
         padding: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
       }
+
     }
-  }
+  
 </style>

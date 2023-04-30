@@ -2,52 +2,52 @@ export default [
   {
     name: 'characters',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'comics',
     href: '#',
-    active: false
+    isActive: true
   },
   {
     name: 'movies',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'tv',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'games',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'collectibles',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'videos',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'fans',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'news',
     href: '#',
-    active: false
+    isActive: false
   },
   {
     name: 'shop',
     href: '#',
-    active: false
+    isActive: false
   }
 ]
 
