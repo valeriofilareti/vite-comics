@@ -1,7 +1,13 @@
 
 <script>
+import linksMenu from '../data/footer-db'
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data(){
+    return {
+      linksMenu
+    }
+  }
 }
 </script>
 
@@ -12,43 +18,26 @@ export default {
         <div class="footer-links d-flex">
           <div class="col">
             <ul>
-              <li><h2>link</h2></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
+              <ul>
+                <li><h2>{{ linksMenu[0].name }}</h2></li>
+                <li v-for="link in linksMenu[0].links"><a href="#">{{link}}</a></li>
+              </ul>
+              <ul>
+                <li><h2>{{ linksMenu[1].name }}</h2></li>
+                <li v-for="link in linksMenu[1].links"><a href="#">{{link}}</a></li>
+              </ul>
             </ul>
           </div>
           <div class="col">
             <ul>
-              <li><h2>link</h2></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
+              <li><h2>{{ linksMenu[2].name }}</h2></li>
+                <li v-for="link in linksMenu[2].links"><a href="#">{{link}}</a></li>
             </ul>
           </div>
           <div class="col">
             <ul>
-              <li><h2>link</h2></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
-              <li><a href="#">link</a></li>
+              <li><h2>{{ linksMenu[3].name }}</h2></li>
+                <li v-for="link in linksMenu[3].links"><a href="#">{{link}}</a></li>
             </ul>
           </div>
           <div class="col"></div>

@@ -7,7 +7,7 @@ export default [
   {
     name: 'comics',
     href: '#',
-    isActive: true
+    isActive: false
   },
   {
     name: 'movies',

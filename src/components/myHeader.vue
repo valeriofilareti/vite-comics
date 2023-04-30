@@ -6,7 +6,13 @@ export default {
   data(){
     return {
       nav,
-      isActive: true
+      isActive: true,
+      counter: ''
+    }
+  },
+  methods: {
+    addActive(){
+      count++;
     }
   },
   mounted(){
@@ -23,7 +29,7 @@ export default {
       </div>
       <nav>
         <ul class="d-flex">
-          <li v-for="link in nav" :class="{ active: link.isActive }"><a href="">{{ link.name }}</a></li>
+          <li v-for="(link, index) in nav" :class="{ active: counter === index }" @click="counter = index"><a href="#">{{ link.name }}</a></li>
 
 
         </ul>
@@ -60,3 +66,6 @@ export default {
     }
   
 </style>
+
+
+<!-- <a href="">{{ link.name }}</a> -->
