@@ -29,9 +29,13 @@ export default {
       </div>
       <nav>
         <ul class="d-flex">
-          <li v-for="(link, index) in nav" :class="{ active: counter === index }" @click="counter = index"><a href="#">{{ link.name }}</a></li>
-
-
+          <li 
+            v-for="(link, index) in nav" 
+            :class="{ active: counter === index }" 
+            @click="counter = index" 
+            :key="index">
+            <a href="#">{{ link.name }}</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -49,7 +53,7 @@ export default {
     width: 80px;
   }
   .active {
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid rgb(43, 0, 255);
   }
 
   nav {
@@ -61,6 +65,9 @@ export default {
         padding: 10px;
         text-transform: uppercase;
         font-size: 12px;
+        a {
+          color: black;
+        }
       }
 
     }

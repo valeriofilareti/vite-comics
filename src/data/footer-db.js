@@ -1,5 +1,4 @@
 export default [
-  
     {
       name: 'dc comics',
       links: [
